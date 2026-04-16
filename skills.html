@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Skills | My Portfolio</title>
+    <style>
+        /* Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Times New Roman", Times, serif;
+            background: linear-gradient(to right, #f0f6ff, #e6f0ff);
+            color: #1e293b;
+            line-height: 1.6;
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(135deg, #0a2540, #123a63);
+            color: #ffffff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #cfe6ff;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #ffffff;
+            letter-spacing: 1px;
+        }
+
+        /* Container */
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        .container h2 {
+            color: #0a2540;
+            margin-bottom: 20px;
+            border-left: 5px solid #2563eb;
+            padding-left: 10px;
+        }
+
+        /* Card */
+        .card {
+            background-color: #ffffff;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+            margin-bottom: 30px;
+        }
+
+        /* Lists */
+        .skills-list,
+        .hobbies-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .skills-list li,
+        .hobbies-list li {
+            font-size: 17px;
+            margin-bottom: 15px;
+            padding: 15px;
+            border-radius: 8px;
+            background-color: #e1edff;
+            border-left: 5px solid #2563eb;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .skills-list li:hover,
+        .hobbies-list li:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+        }
+
+        /* Footer */
+        footer {
+            background-color: #0a2540;
+            color: #ffffff;
+            text-align: center;
+            padding: 15px;
+            margin-top: 40px;
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            .container {
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>E-Portfolio</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="skills.html">Skills</a>
+        <a href="hobbies.html">Hobbies</a>
+        <a href="education.html">Education</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<main class="container">
+    <h2>My Skills</h2>
+
+    <div class="card">
+        <ul class="skills-list">
+            <li>Coding (Programming)</li>
+            <li>Web Development</li>
+            <li>Basic ICT Skills</li>
+        </ul>
+    </div>
+
+    <h2>My Hobbies</h2>
+
+    <div class="card">
+        <ul class="hobbies-list">
+            <li>🎬 Watching Movies</li>
+            <li>🎤 Singing</li>
+            <li>🎮 Gaming</li>
+        </ul>
+    </div>
+
+</main>
+
+<footer>
+    <p>© 2026 E-Portfolio | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>

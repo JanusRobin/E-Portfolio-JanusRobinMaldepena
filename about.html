@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About | My Portfolio</title>
+
+    <style>
+        /* Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Times New Roman", Times, serif;
+            background: linear-gradient(to right, #f0f6ff, #e6f0ff);
+            color: #1e293b;
+            line-height: 1.6;
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(135deg, #0a2540, #123a63);
+            color: #ffffff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #cfe6ff;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #ffffff;
+            letter-spacing: 1px;
+        }
+
+        /* Container */
+        .container {
+            max-width: 950px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        .container h2 {
+            color: #0a2540;
+            margin-bottom: 20px;
+            border-left: 5px solid #2563eb;
+            padding-left: 10px;
+        }
+
+        /* Card */
+        .card {
+            background-color: #ffffff;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+            margin-bottom: 30px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
+        }
+
+        /* About layout */
+        .about-content {
+            display: flex;
+            gap: 25px;
+            align-items: center;
+        }
+
+        .about-image img {
+            width: 180px;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 10px;
+            border: 4px solid #2563eb;
+            transition: transform 0.4s ease;
+        }
+
+        .about-image img:hover {
+            transform: scale(1.08);
+        }
+
+        .about-text {
+            flex: 1;
+        }
+
+        /* Achievers */
+        .achievers {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .achiever {
+            text-align: center;
+            flex: 1 1 calc(25% - 20px);
+            transition: transform 0.3s ease;
+        }
+
+        .achiever:hover {
+            transform: translateY(-5px);
+        }
+
+        .achiever img {
+            width: 100%;
+            max-width: 140px;
+            height: 140px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 3px solid #2563eb;
+            margin-bottom: 10px;
+            transition: transform 0.4s ease;
+        }
+
+        .achiever img:hover {
+            transform: scale(1.1);
+        }
+
+        .achiever p {
+            font-weight: bold;
+            color: #0a2540;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #0a2540;
+            color: #ffffff;
+            text-align: center;
+            padding: 15px;
+            margin-top: 40px;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .about-content {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .achiever {
+                flex: 1 1 45%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .achiever {
+                flex: 1 1 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>E-Portfolio</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="hobbies.html">Hobbies</a>
+        <a href="education.html">Education</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<main class="container">
+    <h2>About Me</h2>
+
+    <div class="card about-content">
+        <div class="about-image">
+            <img src="images/MALDEPENAJPEG.jpg" alt="My Photo">
+        </div>
+
+        <div class="about-text">
+            <p>
+                I completed my junior and senior high school education at Loyola High School as a
+                consistent honor student, achieving <strong>With High Honors</strong> and eventually
+                <strong>With Highest Honors</strong> during my final year.
+                <br><br>
+                My decision to pursue a Bachelor of Science in Information Technology stems from my
+                strong interest in computers, problem-solving, and the role of technology in shaping
+                modern society.
+                <br><br>
+                I enjoy understanding how systems function—from software to networks—which has helped
+                me develop skills in logical thinking, adaptability, and collaboration. I am passionate
+                about continuous learning and aim to contribute meaningful solutions in the IT field.
+            </p>
+        </div>
+    </div>
+
+    <h2>My Achievements</h2>
+
+    <div class="card achievers">
+        <div class="achiever">
+            <img src="images/70109982-60db-41e8-8b43-3ceeabf8744c.jpg">
+            <p>With High Honors</p>
+        </div>
+
+        <div class="achiever">
+            <img src="images/8b73a3b7-4ec0-4d8b-90fb-cfc87051bd04.jpg">
+            <p>With High Honors</p>
+        </div>
+
+        <div class="achiever">
+            <img src="images/d9a67eaa-15dd-45db-89a0-492b28bc917c.jpg">
+            <p>With High Honors</p>
+        </div>
+
+        <div class="achiever">
+            <img src="images/dc59db19-5526-4e83-86ad-8f54897639fc.jpg">
+            <p>With Highest Honors</p>
+        </div>
+    </div>
+
+</main>
+
+<footer>
+    <p>© 2026 E-Portfolio | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>

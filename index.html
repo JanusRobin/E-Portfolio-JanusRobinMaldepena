@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home | My Portfolio</title>
+
+    <style>
+        /* Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Times New Roman", Times, serif;
+            background: linear-gradient(to right, #f0f6ff, #e6f0ff);
+            color: #1e293b;
+            line-height: 1.6;
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(135deg, #0a2540, #123a63);
+            color: #ffffff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin-bottom: 10px;
+        }
+
+        /* Navigation */
+        nav a {
+            color: #cfe6ff;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #ffffff;
+            letter-spacing: 1px;
+        }
+
+        /* Container */
+        .container {
+            max-width: 900px;
+            margin: 50px auto;
+            padding: 20px;
+        }
+
+        .container h2 {
+            color: #0a2540;
+            margin-bottom: 15px;
+            border-left: 5px solid #2563eb;
+            padding-left: 10px;
+        }
+
+        /* Card */
+        .card {
+            background-color: #ffffff;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+            text-align: justify;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
+        }
+
+        /* Highlight intro */
+        .intro {
+            font-size: 18px;
+            margin-bottom: 15px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #0a2540;
+            color: #ffffff;
+            text-align: center;
+            padding: 15px;
+            margin-top: 40px;
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            .container {
+                text-align: center;
+            }
+
+            .card {
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>E-Portfolio</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="skills.html">Skills</a>
+        <a href="hobbies.html">Hobbies</a>
+        <a href="education.html">Education</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<main class="container">
+    <h2>Welcome</h2>
+
+    <div class="card">
+        <p class="intro">
+            Hello! I’m <strong>Janus</strong>, welcome to my personal e-portfolio.
+        </p>
+
+        <p>
+            I am a first-year Bachelor of Science in Information Technology student with a strong
+            passion for technology, coding, and computers. I am deeply interested in how digital
+            systems function and how technology can be used to solve real-world problems.
+            <br><br>
+            As I continue my academic journey, I am eager to develop my skills in programming,
+            software development, and IT systems. My goal is to become a professional Information
+            Technology Specialist who is knowledgeable, adaptable, and capable of contributing
+            meaningful innovations in the ever-evolving world of technology.
+        </p>
+    </div>
+</main>
+
+<footer>
+    <p>© 2026 E-Portfolio | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
