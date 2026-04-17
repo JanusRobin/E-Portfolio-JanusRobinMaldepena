@@ -18,7 +18,6 @@ body {
     color: #e2e8f0;
 }
 
-/* Header */
 header {
     text-align: center;
     padding: 30px;
@@ -55,14 +54,12 @@ nav a:hover {
     color: #38bdf8;
 }
 
-/* Container */
 .container {
     max-width: 1000px;
     margin: 40px auto;
     padding: 20px;
 }
 
-/* Glass Card */
 .card {
     background: rgba(255,255,255,0.05);
     backdrop-filter: blur(12px);
@@ -77,14 +74,12 @@ nav a:hover {
     box-shadow: 0 0 35px rgba(56,189,248,0.3);
 }
 
-/* Layout */
 .contact-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 30px;
 }
 
-/* Contact Info */
 .contact-info p {
     margin-bottom: 20px;
     font-size: 16px;
@@ -94,7 +89,6 @@ nav a:hover {
     color: #38bdf8;
 }
 
-/* Links */
 a {
     color: #38bdf8;
     text-decoration: none;
@@ -104,7 +98,6 @@ a:hover {
     text-decoration: underline;
 }
 
-/* Form */
 form {
     display: flex;
     flex-direction: column;
@@ -124,7 +117,6 @@ input:focus, textarea:focus {
     box-shadow: 0 0 10px #38bdf8;
 }
 
-/* Button */
 button {
     padding: 12px;
     border: none;
@@ -141,14 +133,12 @@ button:hover {
     transform: scale(1.05);
 }
 
-/* Footer */
 footer {
     text-align: center;
     padding: 20px;
     color: #64748b;
 }
 
-/* Responsive */
 @media(max-width: 768px) {
     .contact-wrapper {
         grid-template-columns: 1fr;
@@ -206,279 +196,6 @@ footer {
 
 <footer>
     © 2026 My Portfolio
-</footer>
-
-</body>
-</html>nav a::after {
-    content: "";
-    width: 0;
-    height: 2px;
-    background: #38bdf8;
-    position: absolute;
-    bottom: -5px;
-    left: 0;
-    transition: 0.3s;
-}
-
-nav a:hover::after {
-    width: 100%;
-}
-
-nav a:hover {
-    color: #38bdf8;
-}
-
-/* Container */
-.container {
-    max-width: 1000px;
-    margin: 40px auto;
-    padding: 20px;
-}
-
-/* Glass Card */
-.card {
-    background: rgba(255,255,255,0.05);
-    backdrop-filter: blur(12px);
-    padding: 30px;
-    border-radius: 15px;
-    box-shadow: 0 0 25px rgba(56,189,248,0.1);
-    transition: 0.3s;
-}
-
-.card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 0 35px rgba(56,189,248,0.3);
-}
-
-/* Layout */
-.contact-wrapper {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 30px;
-}
-
-/* Info */
-.contact-info p {
-    margin-bottom: 20px;
-    font-size: 16px;
-}
-
-.contact-info strong {
-    color: #38bdf8;
-}
-
-/* Form */
-form {
-    display: flex;
-    flex-direction: column;
-}
-
-input, textarea {
-    margin-bottom: 15px;
-    padding: 12px;
-    border-radius: 8px;
-    border: none;
-    background: rgba(255,255,255,0.08);
-    color: #fff;
-    outline: none;
-    transition: 0.3s;
-}
-
-input:focus, textarea:focus {
-    box-shadow: 0 0 10px #38bdf8;
-}
-
-/* Button */
-button {
-    padding: 12px;
-    border: none;
-    border-radius: 8px;
-    background: #38bdf8;
-    color: #020617;
-    font-weight: bold;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-button:hover {
-    background: #0ea5e9;
-    transform: scale(1.05);
-}
-
-/* Footer */
-footer {
-    text-align: center;
-    padding: 20px;
-    color: #64748b;
-}
-
-/* Responsive */
-@media(max-width: 768px) {
-    .contact-wrapper {
-        grid-template-columns: 1fr;
-    }
-}
-</style>
-</head>
-
-<body>
-
-<header>
-    <h1>Contact Me</h1>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="hobbies.html">Hobbies</a>
-        <a href="education.html">Education</a>
-        <a href="contact.html">Contact</a>
-    </nav>
-</header>
-
-<main class="container">
-
-<div class="card contact-wrapper">
-
-    <!-- Contact Info -->
-    <div class="contact-info">
-        <p><strong>📱 Phone:</strong> +63 994 622 6067</p>
-
-        <p>
-            <strong>📧 Email:</strong><br>
-            <a href="mailto:maldepenajanus@gmail.com">maldepenajanus@gmail.com</a>
-        </p>
-
-        <p>
-            <strong>🌐 Facebook:</strong><br>
-            <a href="https://www.facebook.com/share/1BQH5SS6oo/?mibextid=wwXIfr" target="_blank">
-                Janus Maldepena
-            </a>
-        </p>
-    </div>
-
-    <!-- Contact Form -->
-    <form>
-        <input type="text" placeholder="Your Name" required>
-        <input type="email" placeholder="Your Email" required>
-        <textarea rows="5" placeholder="Your Message"></textarea>
-        <button type="submit">Send Message</button>
-    </form>
-
-</div>
-
-</main>
-
-<footer>
-    © 2026 My Portfolio
-</footer>
-
-</body>
-</html>        nav a:hover {
-            color: #ffffff;
-            letter-spacing: 1px;
-        }
-
-        /* Container */
-        .container {
-            max-width: 900px;
-            margin: 40px auto;
-            padding: 20px;
-        }
-
-        .container h2 {
-            color: #0a2540;
-            margin-bottom: 20px;
-            border-left: 5px solid #2563eb;
-            padding-left: 10px;
-        }
-
-        /* Card */
-        .card {
-            background-color: #ffffff;
-            padding: 25px;
-            border-radius: 10px;
-            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        .card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
-        }
-
-        /* Contact info */
-        .contact-info p {
-            margin-bottom: 15px;
-            font-size: 18px;
-        }
-
-        .contact-info strong {
-            color: #0a2540;
-        }
-
-        /* Links */
-        a {
-            color: #2563eb;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        a:hover {
-            text-decoration: underline;
-            color: #1d4ed8;
-        }
-
-        /* Footer */
-        footer {
-            background-color: #0a2540;
-            color: #ffffff;
-            text-align: center;
-            padding: 15px;
-            margin-top: 40px;
-        }
-
-        /* Responsive */
-        @media (max-width: 600px) {
-            .container {
-                text-align: center;
-            }
-        }
-    </style>
-</head>
-<body>
-
-<header>
-    <h1>E-Portfolio</h1>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="hobbies.html">Hobbies</a>
-        <a href="education.html">Education</a>
-        <a href="contact.html">Contact</a>
-    </nav>
-</header>
-
-<main class="container">
-    <h2>Contact Me</h2>
-
-    <div class="card contact-info">
-        <p><strong>📱 Phone:</strong> +63 994 622 6067</p>
-        
-        <p>
-            <strong>📧 Email:</strong> 
-            <a href="mailto:maldepenajanus@gmail.com">maldepenajanus@gmail.com</a>
-        </p>
-
-        <p>
-            <strong>🌐 Facebook:</strong> 
-            <a href="https://www.facebook.com/share/1BQH5SS6oo/?mibextid=wwXIfr" target="_blank">
-                Janus Maldepena
-            </a>
-        </p>
-    </div>
-</main>
-
-<footer>
-    <p>© 2026 E-Portfolio | All Rights Reserved</p>
 </footer>
 
 </body>
