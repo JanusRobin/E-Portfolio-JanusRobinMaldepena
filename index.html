@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Home | My Portfolio</title>
 
 <style>
@@ -28,6 +29,8 @@ nav a {
     margin: 0 15px;
     text-decoration: none;
     position: relative;
+    font-weight: bold;
+    transition: 0.3s;
 }
 
 nav a::after {
@@ -35,6 +38,164 @@ nav a::after {
     width: 0;
     height: 2px;
     background: #38bdf8;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    transition: 0.3s;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+nav a:hover {
+    color: #38bdf8;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    margin-top: 60px;
+}
+
+/* Typing Name */
+.typing {
+    font-size: 2.8rem;
+    color: #38bdf8;
+    border-right: 3px solid #38bdf8;
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 3s steps(20), blink .7s infinite;
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 14ch }
+}
+
+@keyframes blink {
+    50% { border-color: transparent }
+}
+
+/* Subtitle */
+.subtitle {
+    margin-top: 15px;
+    font-size: 18px;
+    color: #94a3b8;
+}
+
+/* Buttons */
+.buttons {
+    margin-top: 25px;
+}
+
+.buttons a {
+    display: inline-block;
+    padding: 12px 20px;
+    margin: 10px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-primary {
+    background: #38bdf8;
+    color: #020617;
+}
+
+.btn-primary:hover {
+    background: #0ea5e9;
+    transform: scale(1.05);
+}
+
+.btn-secondary {
+    border: 2px solid #38bdf8;
+    color: #38bdf8;
+}
+
+.btn-secondary:hover {
+    background: #38bdf8;
+    color: #020617;
+}
+
+/* Content */
+.container {
+    max-width: 900px;
+    margin: 60px auto;
+    padding: 20px;
+}
+
+.card {
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(12px);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 25px rgba(56,189,248,0.1);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 0 35px rgba(56,189,248,0.3);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #64748b;
+}
+
+/* Responsive */
+@media(max-width: 600px) {
+    .typing {
+        font-size: 2rem;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="hobbies.html">Hobbies</a>
+        <a href="education.html">Education</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+    <div class="typing">Hi, I'm Janus</div>
+    <p class="subtitle">BS Information Technology Student</p>
+
+    <div class="buttons">
+        <a href="about.html" class="btn-primary">About Me</a>
+        <a href="contact.html" class="btn-secondary">Contact</a>
+    </div>
+</section>
+
+<!-- INTRO -->
+<div class="container">
+    <div class="card">
+        <p>
+            Welcome to my portfolio. I am passionate about technology, coding, and solving real-world problems.
+            I aim to grow as an IT professional by continuously learning and building meaningful projects.
+        </p>
+    </div>
+</div>
+
+<footer>
+    © 2026 My Portfolio
+</footer>
+
+</body>
+</html>    background: #38bdf8;
     position: absolute;
     bottom: -5px;
     left: 0;
