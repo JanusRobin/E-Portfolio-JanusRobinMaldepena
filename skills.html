@@ -2,7 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Skills | My Portfolio</title>
+
     <style>
         /* Reset */
         * {
@@ -26,6 +28,10 @@
             text-align: center;
         }
 
+        nav {
+            margin-top: 10px;
+        }
+
         nav a {
             color: #cfe6ff;
             margin: 0 15px;
@@ -35,6 +41,123 @@
         }
 
         nav a:hover {
+            color: #ffffff;
+            letter-spacing: 1px;
+        }
+
+        /* Container */
+        .container {
+            max-width: 900px;
+            margin: 50px auto;
+            padding: 20px;
+        }
+
+        .container h2 {
+            color: #0a2540;
+            margin-bottom: 20px;
+            border-left: 5px solid #2563eb;
+            padding-left: 10px;
+        }
+
+        /* Card */
+        .card {
+            background-color: #ffffff;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+            margin-bottom: 20px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
+        }
+
+        /* Skills List */
+        ul {
+            margin-left: 20px;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #0a2540;
+            color: #ffffff;
+            text-align: center;
+            padding: 15px;
+            margin-top: 40px;
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            .container {
+                text-align: center;
+            }
+
+            ul {
+                text-align: left;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>E-Portfolio</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="skills.html">Skills</a>
+        <a href="hobbies.html">Hobbies</a>
+        <a href="education.html">Education</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<main class="container">
+    <h2>My Skills</h2>
+
+    <div class="card">
+        <h3>Technical Skills</h3>
+        <ul>
+            <li>Basic HTML & CSS</li>
+            <li>Intro to Java Programming</li>
+            <li>Computer Troubleshooting</li>
+            <li>Basic Networking</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h3>Soft Skills</h3>
+        <ul>
+            <li>Communication Skills</li>
+            <li>Teamwork</li>
+            <li>Problem Solving</li>
+            <li>Time Management</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h3>Tools & Technologies</h3>
+        <ul>
+            <li>Visual Studio Code</li>
+            <li>Git (Basic)</li>
+            <li>Microsoft Office</li>
+        </ul>
+    </div>
+</main>
+
+<footer>
+    <p>© 2026 E-Portfolio | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>        nav a:hover {
             color: #ffffff;
             letter-spacing: 1px;
         }
