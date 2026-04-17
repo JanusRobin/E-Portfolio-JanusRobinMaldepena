@@ -18,6 +18,7 @@ body {
     color: #e2e8f0;
 }
 
+/* Header */
 header {
     text-align: center;
     padding: 30px;
@@ -54,30 +55,34 @@ nav a:hover {
     color: #38bdf8;
 }
 
+/* Container */
 .container {
     max-width: 900px;
     margin: 40px auto;
     padding: 20px;
 }
 
+/* Title */
 h2 {
     color: #38bdf8;
     margin-bottom: 30px;
     text-align: center;
 }
 
+/* Timeline */
 .timeline {
     position: relative;
     padding-left: 40px;
     border-left: 3px solid #38bdf8;
 }
 
+/* Item */
 .timeline-item {
     position: relative;
     margin-bottom: 40px;
 }
 
-
+/* Dot */
 .timeline-item::before {
     content: "";
     position: absolute;
@@ -90,6 +95,7 @@ h2 {
     box-shadow: 0 0 15px #38bdf8;
 }
 
+/* Card */
 .timeline-content {
     background: rgba(255,255,255,0.05);
     padding: 20px;
@@ -109,6 +115,7 @@ h2 {
     margin-bottom: 5px;
 }
 
+/* Footer */
 footer {
     text-align: center;
     padding: 20px;
@@ -116,6 +123,7 @@ footer {
     margin-top: 30px;
 }
 
+/* Responsive */
 @media(max-width: 600px) {
     .timeline {
         padding-left: 20px;
@@ -123,3 +131,69 @@ footer {
 }
 </style>
 </head>
+
+<body>
+
+<header>
+    <h1>My Education</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="skills.html">Skills</a>
+        <a href="hobbies.html">Hobbies</a>
+        <a href="education.html">Education</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<main class="container">
+
+<h2>Academic Journey</h2>
+
+<div class="timeline">
+
+    <div class="timeline-item">
+        <div class="timeline-content">
+            <h3>🎓 Manlamonay Elementary School</h3>
+            <p>Built my foundation in education, developing basic knowledge and discipline.</p>
+        </div>
+    </div>
+
+    <div class="timeline-item">
+        <div class="timeline-content">
+            <h3>🎓 Loyola School of Don Carlos Inc. (Junior High)</h3>
+            <p>Developed strong academic habits and achieved consistent honors.</p>
+        </div>
+    </div>
+
+    <div class="timeline-item">
+        <div class="timeline-content">
+            <h3>🎓 Loyola School of Don Carlos Inc. (STEM)</h3>
+            <p>Focused on Science and Technology, improving analytical and problem-solving skills.</p>
+        </div>
+    </div>
+
+    <div class="timeline-item">
+        <div class="timeline-content">
+            <h3>🏫 San Isidro College</h3>
+            <p>Currently studying and growing professionally in the IT field.</p>
+        </div>
+    </div>
+
+    <div class="timeline-item">
+        <div class="timeline-content">
+            <h3>💻 Bachelor of Science in Information Technology</h3>
+            <p>Learning programming, networking, and system development to build real-world solutions.</p>
+        </div>
+    </div>
+
+</div>
+
+</main>
+
+<footer>
+    © 2026 My Portfolio
+</footer>
+
+</body>
+</html>
