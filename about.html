@@ -1,66 +1,247 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>About | My Portfolio</title>
+<meta charset="UTF-8">
+<title>About | My Portfolio</title>
 
-    <style>
-        /* Reset */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+<style>
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-        body {
-            font-family: "Times New Roman", Times, serif;
-            background: linear-gradient(to right, #f0f6ff, #e6f0ff);
-            color: #1e293b;
-            line-height: 1.6;
-        }
+body {
+    font-family: 'Poppins', sans-serif;
+    background: radial-gradient(circle at top, #0f172a, #020617);
+    color: #e2e8f0;
+    overflow-x: hidden;
+}
 
-        /* Header */
-        header {
-            background: linear-gradient(135deg, #0a2540, #123a63);
-            color: #ffffff;
-            padding: 20px;
-            text-align: center;
-        }
+/* Header */
+header {
+    text-align: center;
+    padding: 30px;
+    background: transparent;
+}
 
-        nav a {
-            color: #cfe6ff;
-            margin: 0 15px;
-            text-decoration: none;
-            font-weight: bold;
-            transition: 0.3s;
-        }
+/* Typing Effect */
+.typing {
+    font-size: 2.5rem;
+    color: #38bdf8;
+    border-right: 3px solid #38bdf8;
+    width: fit-content;
+    margin: auto;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 4s steps(20), blink .7s infinite;
+}
 
-        nav a:hover {
-            color: #ffffff;
-            letter-spacing: 1px;
-        }
+@keyframes typing {
+    from { width: 0 }
+    to { width: 14ch }
+}
 
-        /* Container */
-        .container {
-            max-width: 950px;
-            margin: 40px auto;
-            padding: 20px;
-        }
+@keyframes blink {
+    50% { border-color: transparent }
+}
 
-        .container h2 {
-            color: #0a2540;
-            margin-bottom: 20px;
-            border-left: 5px solid #2563eb;
-            padding-left: 10px;
-        }
+/* Nav */
+nav {
+    margin-top: 15px;
+}
 
-        /* Card */
-        .card {
-            background-color: #ffffff;
-            padding: 25px;
-            border-radius: 10px;
-            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
-            margin-bottom: 30px;
+nav a {
+    color: #94a3b8;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: 500;
+    position: relative;
+}
+
+nav a::after {
+    content: "";
+    width: 0;
+    height: 2px;
+    background: #38bdf8;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    transition: 0.3s;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+nav a:hover {
+    color: #38bdf8;
+}
+
+/* Container */
+.container {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+/* Glass Card */
+.card {
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(12px);
+    border-radius: 15px;
+    padding: 30px;
+    margin-bottom: 40px;
+    box-shadow: 0 0 25px rgba(56,189,248,0.1);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 0 35px rgba(56,189,248,0.3);
+}
+
+/* About Layout */
+.about-content {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.about-image img {
+    width: 200px;
+    height: 200px;
+    border-radius: 15px;
+    object-fit: cover;
+    border: 3px solid #38bdf8;
+    transition: 0.4s;
+}
+
+.about-image img:hover {
+    transform: scale(1.1) rotate(2deg);
+}
+
+/* Section Titles */
+h2 {
+    margin-bottom: 20px;
+    color: #38bdf8;
+}
+
+/* Achievers */
+.achievers {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 25px;
+    text-align: center;
+}
+
+.achiever img {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    border: 3px solid #38bdf8;
+    object-fit: cover;
+    transition: 0.4s;
+}
+
+.achiever img:hover {
+    transform: scale(1.15);
+    box-shadow: 0 0 20px #38bdf8;
+}
+
+.achiever p {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #64748b;
+}
+
+/* Responsive */
+@media(max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="typing">Hi, I'm Janus Robin Y. Maldepena</div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="hobbies.html">Hobbies</a>
+        <a href="education.html">Education</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<main class="container">
+
+<h2>About Me</h2>
+
+<div class="card about-content">
+    <div class="about-image">
+        <img src="images/MALDEPENAJPEG.jpg">
+    </div>
+
+    <div>
+        <p>
+            I completed my junior and senior high school education at Loyola High School as a
+            consistent honor student, achieving <strong>With High Honors</strong> and eventually
+            <strong>With Highest Honors</strong>.
+            <br><br>
+            I chose Information Technology because of my deep interest in computers,
+            problem-solving, and innovation.
+            <br><br>
+            I enjoy understanding systems, building solutions, and continuously learning
+            new technologies to grow in the IT field.
+        </p>
+    </div>
+</div>
+
+<h2>Achievements</h2>
+
+<div class="card achievers">
+    <div class="achiever">
+        <img src="images/70109982-60db-41e8-8b43-3ceeabf8744c.jpg">
+        <p>With High Honors</p>
+    </div>
+
+    <div class="achiever">
+        <img src="images/8b73a3b7-4ec0-4d8b-90fb-cfc87051bd04.jpg">
+        <p>With High Honors</p>
+    </div>
+
+    <div class="achiever">
+        <img src="images/d9a67eaa-15dd-45db-89a0-492b28bc917c.jpg">
+        <p>With High Honors</p>
+    </div>
+
+    <div class="achiever">
+        <img src="images/dc59db19-5526-4e83-86ad-8f54897639fc.jpg">
+        <p>With Highest Honors</p>
+    </div>
+</div>
+
+</main>
+
+<footer>
+    © 2026 My Portfolio
+</footer>
+
+</body>
+</html>            margin-bottom: 30px;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
 
